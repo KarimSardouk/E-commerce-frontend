@@ -1,0 +1,8 @@
+{
+  "name": "E-commerce-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KarimSardouk/E-commerce-frontend.git",
+  "author": "Karim Sardouk <karimsardouk727@gmail.com>",
+  "license": "MIT"
+}
