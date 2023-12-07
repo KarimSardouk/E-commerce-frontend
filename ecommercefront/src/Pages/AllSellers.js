@@ -10,7 +10,7 @@ const AllSellers = () => {
       const getAllSellers = async () => {
         try {
           //fill the http url with your own
-          const response = await axios.get("http://localhost:8000/users/    ");
+          const response = await axios.get("http://localhost:8000/users/");
           console.log(response);
           setUsers(response.data);
           setName(response.data);
