@@ -51,10 +51,10 @@ const Dashboard = () => {
           Statistics
         </a>
         <a className="approval" onClick={handleApprove}>
-          Approve products
+          Add/Manage products
         </a>
       </div>
-
+{/* Add product , view all quantity of the product remaining , the process goes through the admin whether or not the product would be added */}
       <table className="customers" id="customers">
         <tr className="tr1">
           <th className="th1">Name</th>

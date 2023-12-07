@@ -12,6 +12,8 @@ import Profile from "./Pages/Profile";
 import ApproveProducts from "./Pages/ApproveProducts";
 import Error from "./Pages/Error";
 import Statistics from "./Pages/Statistics";
+import AdminDash from "./Pages/AdminDash";
+import AllSellers from "./Pages/AllSellers";
 function App() {
   return (
     <Router>
@@ -25,6 +27,10 @@ function App() {
       <Route path="/Profile" element={< Profile/>} />
       <Route path="/ApproveProducts" element={< ApproveProducts/>} />
       <Route path="/Statistics" element={< Statistics/>} />
+      <Route path="/AdminDash" element={< AdminDash/>} />
+      <Route path="/AllSellers" element={< AllSellers/>} />
+
+
       
 
       

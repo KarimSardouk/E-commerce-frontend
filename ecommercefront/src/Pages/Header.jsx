@@ -45,6 +45,10 @@ const Header = () => {
     e.preventDefault();
     navigate("/Dashboard");
   };
+  const handleAdminDash = (e) => {
+    e.preventDefault();
+    navigate("/AdminDash");
+  }
   return (
     <div>
       <Helmet>
@@ -61,6 +65,7 @@ const Header = () => {
       </Helmet>
       <div className="header">
         <ul className="header-ul">
+        <img src="icons8-dashboard-90.png" alt='this is an image' className="adm-dash" onClick={handleAdminDash}/>
           <a href="/" className="a">
             <li>Home</li>
           </a>
@@ -84,6 +89,7 @@ const Header = () => {
               {" "}
               <img className="image-profile" src={profileimage} alt="" />
             </a>
+            
             <img src='icons8-dashboard-100.png' alt='img' className="dashboard-img" onClick={handleDashboard}/>
           </div>
         </ul>

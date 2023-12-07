@@ -35,7 +35,7 @@ const ApproveProducts = () => {
           Statistics
         </a>
         <a className="approval" onClick={handleApprove}>
-          Approve products
+        Add/Manage products
         </a>
       </div>
     <div className='body1'>
