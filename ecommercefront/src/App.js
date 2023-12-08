@@ -1,40 +1,46 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./Pages/Login";
-import Home from "./Pages/Home";
+import Login from "./Components/Login";
+import Home from "./Components/Home";
 import ProtectedRoute from "./Components/ProtectedRoute";
-import Dashboard from "./Pages/Dashboard";
-import About from "./Pages/About"
-import Contact from "./Pages/Contact"
-import Category from "./Pages/Category"
-import AllProducts from "./Pages/AllProducts"
-import Cart from "./Pages/Cart";
-import Profile from "./Pages/Profile";
-import ApproveProducts from "./Pages/ApproveProducts";
-import Error from "./Pages/Error";
-import Statistics from "./Pages/Statistics";
-import AdminDash from "./Pages/AdminDash";
-import AllSellers from "./Pages/AllSellers";
+import Dashboard from "./Components/Dashboard";
+import Contact from "./Components/Contact"
+import Category from "./Components/Category"
+import AllProducts from "./Components/AllProducts"
+import Cart from "./Components/Cart";
+import Profile from "./Components/Profile";
+import ApproveProducts from "./Components/ApproveProducts";
+import Error from "./Components/Error";
+import AdminDash from "./Components/AdminDash";
+import AllSellers from "./Components/AllSellers";
+import About from "./Components/About";
+import Statistics from "./Components/Statistics";
+import Brands from "./Components/Brands";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <Router>
 
       <Routes>
-      <Route path="/About" element={<About />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/Category" element={<Category />} />
-      <Route path="/AllProducts" element={<AllProducts />} />
-      <Route path="/Cart" element={< Cart/>} />
-      <Route path="/Profile" element={< Profile/>} />
-      <Route path="/ApproveProducts" element={< ApproveProducts/>} />
-      <Route path="/Statistics" element={< Statistics/>} />
-      <Route path="/AdminDash" element={< AdminDash/>} />
-      <Route path="/AllSellers" element={< AllSellers/>} />
+        <About />
+        <Statistics />
+        <Brands />
+        <Footer />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Category" element={<Category />} />
+        <Route path="/AllProducts" element={<AllProducts />} />
+        <Route path="/Cart" element={< Cart />} />
+        <Route path="/Profile" element={< Profile />} />
+        <Route path="/ApproveProducts" element={< ApproveProducts />} />
+        <Route path="/Statistics" element={< Statistics />} />
+        <Route path="/AdminDash" element={< AdminDash />} />
+        <Route path="/AllSellers" element={< AllSellers />} />
 
 
-      
 
-      
-        
+
+
+
         <Route path="/login" element={<Login />} />
         <Route
           path="/dashboard"
@@ -52,7 +58,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-              <Route path="/Error" element={< Error/>} />
+        <Route path="/Error" element={< Error />} />
 
       </Routes>
     </Router>
